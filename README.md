@@ -47,10 +47,11 @@ Hệ thống Quản Lý Hoạt Động Ngoại Khoá là một hệ thống sử
    cd ../frontend
    npm install
    ```
-4. **Thiết lập biến môi trường:**  
-   - File `.env.sample` được cung cấp trong cả hai thư mục `frontend` và `backend`, sử dụng file này để tạo file `.env`.  
-
-5. **Chạy script tạo tài khoản quản trị viên:**   
+4. **Thiết lập biến môi trường:**
+   - File `.env.sample` được cung cấp trong cả hai thư mục `frontend` và `backend`, sử dụng file này để tạo file `.env`.
+5.  **Thiết lập media:**
+    - Tạo folder media trong backend và thêm file .keep
+6. **Chạy script tạo tài khoản quản trị viên:**   
    *
    ```bash
    cd backend
@@ -59,7 +60,7 @@ Hệ thống Quản Lý Hoạt Động Ngoại Khoá là một hệ thống sử
    - **Login ID:** `123456`
    - **Password:** `admin123`
   
-6. **Chạy server backend:**   
+7. **Chạy server backend:**   
    *
    ```bash
    cd backend
