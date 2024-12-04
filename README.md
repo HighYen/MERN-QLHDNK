@@ -1,84 +1,72 @@
+# Hệ Thống Quản Lý Hoạt Động Ngoại Khoá
 
-# College Management System
+Hệ thống Quản Lý Hoạt Động Ngoại Khoá là một hệ thống sử dụng MERN Stack với ba cổng đăng nhập khác nhau cho sinh viên, giảng viên và quản trị viên.
 
-The College Management System is a MERN Stack-based system with three different login portals for students, faculty, and admin.
+## Công Nghệ Sử Dụng
 
-## Tech Stack
+**Client:** React, Redux, TailwindCSS  
+**Server:** Node, Express  
+**Cơ Sở Dữ Liệu:** MongoDB  
 
-**Client:** React, Redux, TailwindCSS
+## Tính Năng Dành Cho Sinh Viên
 
-**Server:** Node, Express
+- **Điểm Danh Hoạt Động:** Điểm danh các hoạt động tham gia  
+- **Xem Điểm Hoạt Động:** Xem điểm hoạt động ngoại khoá cá nhân  
+- **Hoạt động:** Xem các thông báo về hoạt động
+- **Đăng Kí Hoạt động:** Đăng kí các hoạt động sắp diễn ra
+- **Thời Khóa Biểu:** Xem thời khóa biểu cá nhân  
+- **Cập Nhật Mật Khẩu:** Cho phép sinh viên thay đổi mật khẩu  
 
-**Database:** MongoDB
+## Tính Năng Dành Cho Giảng Viên
 
-## Student Features
+- **Thông Tin Sinh Viên:** Xem thông tin chi tiết của sinh viên  
+- **Cập Nhật Mật Khẩu:** Cho phép giảng viên thay đổi mật khẩu  
+- **Chấm Điểm Hoạt Động** Chấm điểm hoạt động ngoại khoá  
+- **Quản Lý Hoạt Động:** Quản lý hoạt động  
+- **Quản Lý Thời Khóa Biểu:** Quản lý thời khóa biểu  
 
-- Internal Marks: Access to view internal marks for courses
-- External Marks: Access to view external marks for courses
-- Course Materials: Ability to download course materials
-- Notices: Access to view notices
-- Timetables: Access to view their own timetables
-- Password Update: Ability for students to update their passwords
 
-## Faculty Features
+## Tính Năng Dành Cho Quản Trị Viên
 
-- Student Details: Ability for faculty to view student details
-- Password Update: Ability for faculty to update their own passwords
-- Notices: Ability for faculty to add notices
-- Materials Upload: Ability for faculty to upload course materials
-- Timetable Management: Ability for faculty to manage timetables
-- Exam Mark Recording: Ability for faculty to record internal and external exam marks
+- **Tạo Tài Khoản:** Thêm tài khoản mới cho sinh viên, giảng viên và quản trị viên  
+- **Chỉnh Sửa Thông Tin Tài Khoản:** Thay đổi thông tin chi tiết của từng tài khoản  
+- **Quản Lý Hoạt Động:** Thêm/sửa hoạt động 
+- **Quản Lý Thông Báo:** Thêm/sửa thông báo  
 
-## Admin Features
+## Hướng Dẫn Cài Đặt
 
-- Account Creation: Ability for admins to add new students, faculty, and admin accounts
-- Account Details Modification: Ability for admins to modify the details of each account
-- Subject Management: Ability for admins to add/edit subjects
-- Notices Management: Ability for admins to add/edit notices
-
-## Setup Instructions
-
-1. **Clone the repository:**
-
+1. **Clone repository:**   
+   *
    ```bash
-   git clone https://github.com/krish-7104/College-Management-System
-   ```
-
-2. **Install dependencies:**
-
-   ```bash
+   git clone https://github.com/HighYen/MERN-QLHDNK.git
+   ```*
+2. **Cài đặt các thư viện phụ thuộc:**  
+    *```bash
    cd backend
    npm install
    cd ../frontend
    npm install
-   ```
+   ```*
+3. **Thiết lập biến môi trường:**  
+   - File `.env.sample` được cung cấp trong cả hai thư mục `frontend` và `backend`, sử dụng file này để tạo file `.env`.  
 
-3. **Setup environment variables:**
-
-  - I have provided .env.sample in both frontend and backend using that create .env file
-
-4. **Run the admin seeder:**
-
+4. **Chạy script tạo tài khoản quản trị viên:**   
+   *
    ```bash
    cd backend
    npm run seed
    ```
-
    - **Login ID:** `123456`
    - **Password:** `admin123`
   
-   - Using this login to the admin account and from admin you can add new faculty, student and admins!
-
-5. **Run the backend server:**
-
-   ```bash
+5. **Chạy server backend:**   
+   *```bash
    cd backend
    npm start
-   ```
-
-6. **Run the frontend server:**
-
-   ```bash
+   ```*
+   
+6. **Chạy server frontend:**
+   *```bash
    cd ../frontend
    npm start
-   ```
+   ```*
