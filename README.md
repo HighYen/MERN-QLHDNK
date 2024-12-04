@@ -36,21 +36,21 @@ Hệ thống Quản Lý Hoạt Động Ngoại Khoá là một hệ thống sử
 ## Hướng Dẫn Cài Đặt
 
 1. **Clone repository:**   
-   *
-   ```bash
+   *```bash
    git clone https://github.com/HighYen/MERN-QLHDNK.git
    ```*
 2. **Cài đặt các thư viện phụ thuộc:**  
-    *```bash
+    *
+   ```bash
    cd backend
    npm install
    cd ../frontend
    npm install
-   ```*
-3. **Thiết lập biến môi trường:**  
+   ```
+4. **Thiết lập biến môi trường:**  
    - File `.env.sample` được cung cấp trong cả hai thư mục `frontend` và `backend`, sử dụng file này để tạo file `.env`.  
 
-4. **Chạy script tạo tài khoản quản trị viên:**   
+5. **Chạy script tạo tài khoản quản trị viên:**   
    *
    ```bash
    cd backend
@@ -59,14 +59,16 @@ Hệ thống Quản Lý Hoạt Động Ngoại Khoá là một hệ thống sử
    - **Login ID:** `123456`
    - **Password:** `admin123`
   
-5. **Chạy server backend:**   
-   *```bash
+6. **Chạy server backend:**   
+   *
+   ```bash
    cd backend
    npm start
-   ```*
+   ```
    
-6. **Chạy server frontend:**
-   *```bash
+8. **Chạy server frontend:**
+   *
+   ```bash
    cd ../frontend
    npm start
-   ```*
+   ```
