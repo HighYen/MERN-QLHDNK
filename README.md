@@ -36,10 +36,11 @@ Hệ thống Quản Lý Hoạt Động Ngoại Khoá là một hệ thống sử
 ## Hướng Dẫn Cài Đặt
 
 1. **Clone repository:**   
-   *```bash
+   *
+   ```bash
    git clone https://github.com/HighYen/MERN-QLHDNK.git
    ```*
-2. **Cài đặt các thư viện phụ thuộc:**  
+3. **Cài đặt các thư viện phụ thuộc:**  
     *
    ```bash
    cd backend
