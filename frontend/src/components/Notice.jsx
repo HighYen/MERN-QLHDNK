@@ -19,19 +19,19 @@ const Notice = () => {
   const [data, setData] = useState({
     title: "",
     description: "",
-    type: "Sinh viên",
+    type: "Đoàn Khoa",
     link: "",
   });
 
   const getNoticeHandler = () => {
     let data = {};
-    if (router.pathname.replace("/", "") === "Sinh viên") {
+    if (router.pathname.replace("/", "") === "Đoàn Khoa") {
       data = {
-        type: ["Sinh viên", "Cả 2"],
+        type: ["Đoàn Khoa"],
       };
     } else {
       data = {
-        type: ["Sinh viên", "Cả 2", "Giảng viên"],
+        type: ["Đoàn Khoa", "Trường"],
       };
     }
     const headers = {
@@ -56,13 +56,13 @@ const Notice = () => {
 
   useEffect(() => {
     let data = {};
-    if (router.pathname.replace("/", "") === "Sinh viên") {
+    if (router.pathname.replace("/", "") === "Đoàn Khoa") {
       data = {
-        type: ["Sinh viên", "Cả 2"],
+        type: ["Đoàn Khoa"],
       };
     } else {
       data = {
-        type: ["Sinh viên", "Cả 2", "Giảng viên"],
+        type: ["Đoàn Khoa", "Trường"],
       };
     }
     const headers = {
@@ -175,7 +175,7 @@ const Notice = () => {
   const openHandler = () => {
     setOpen(!open);
     setEdit(false);
-    setData({ title: "", description: "", type: "Sinh viên", link: "" });
+    setData({ title: "", description: "", type: "Đoàn Khoa", link: "" });
   };
 
   return (
@@ -303,16 +303,15 @@ const Notice = () => {
             />
           </div>
           <div className="w-[40%] mt-4">
-            <label htmlFor="type">Khoa Tham Gia</label>
+            <label htmlFor="type">Quy mô Hoạt động</label>
             <select
               id="type"
               className="px-2 bg-blue-50 py-3 rounded-sm text-base w-[80%] accent-blue-700 mt-4"
               value={data.type}
               onChange={(e) => setData({ ...data, type: e.target.value })}
             >
-              <option value="Sinh viên">Sinh viên</option>
-              <option value="Giảng viên">Giảng viên</option>
-              <option value="Cả 2">Cả 2</option>
+              <option value="Đoàn Khoa">Đoàn Khoa</option>
+              <option value="Trường">Trường</option>
             </select>
           </div>
           {edit && (
