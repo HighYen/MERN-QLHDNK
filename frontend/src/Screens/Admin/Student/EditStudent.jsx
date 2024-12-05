@@ -316,8 +316,8 @@ const EditStudent = () => {
               value={data.gender}
               onChange={(e) => setData({ ...data, gender: e.target.value })}
             >
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
+              <option value="Male">Nam</option>
+              <option value="Female">Nữ</option>
             </select>
           </div>
           <div className="w-[40%]">
